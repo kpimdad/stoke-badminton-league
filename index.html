@@ -19,7 +19,6 @@ body::before{content:'';position:fixed;inset:0;z-index:0;
     radial-gradient(ellipse at 85% 20%,rgba(168,85,247,0.07) 0%,transparent 55%),
     radial-gradient(ellipse at 50% 90%,rgba(255,107,53,0.05) 0%,transparent 55%);
   pointer-events:none;}
-
 /* HEADER */
 header{position:sticky;top:0;z-index:100;height:68px;padding:0 2rem;
   display:flex;align-items:center;justify-content:space-between;
@@ -35,17 +34,14 @@ nav button{background:none;border:1px solid transparent;color:var(--muted);
   padding:0.45rem 0.9rem;border-radius:8px;cursor:pointer;transition:all 0.2s;}
 nav button:hover{color:var(--text);background:rgba(255,255,255,0.05);}
 nav button.active{color:var(--accent);background:rgba(0,229,255,0.1);border-color:rgba(0,229,255,0.2);}
-
 /* MAIN */
 main{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;}
 .section{display:none;animation:fadeUp 0.35s ease;}
 .section.active{display:block;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
-
 .page-title{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;letter-spacing:0.04em;line-height:1;margin-bottom:0.3rem;}
 .page-title .hl{background:linear-gradient(135deg,var(--accent),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .page-sub{color:var(--muted);font-size:0.88rem;margin-bottom:2rem;}
-
 /* STAT CARDS */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem;}
 .stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.25rem 1.5rem;position:relative;overflow:hidden;transition:transform 0.2s,border-color 0.2s;}
@@ -56,7 +52,6 @@ main{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 1.5
 .stat-card.c4::before{background:linear-gradient(90deg,var(--accent3),var(--red));}
 .stat-label{font-size:0.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;}
 .stat-value{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:0.03em;}
-
 /* TABLE */
 .table-wrap{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:2rem;}
 .table-header{padding:1rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,rgba(0,229,255,0.04),transparent);}
@@ -68,29 +63,24 @@ td{padding:0.8rem 1.25rem;font-size:0.88rem;border-bottom:1px solid rgba(28,45,7
 tbody tr:last-child td{border-bottom:none;}
 tbody tr{transition:background 0.15s;}
 tbody tr:hover{background:rgba(0,229,255,0.03);}
-
 .rank{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:var(--muted);}
 .rank.gold{color:var(--yellow);text-shadow:0 0 10px rgba(255,215,0,0.5);}
 .rank.silver{color:#c8d8f0;}
 .rank.bronze{color:#cd8040;}
-
 .stars{font-size:0.72rem;letter-spacing:1px;}
 .stars .on{color:var(--yellow);}
 .stars .half{color:var(--accent2);}
 .stars .off{color:var(--border);}
-
 .bar-wrap{display:flex;align-items:center;gap:0.75rem;}
 .bar-bg{flex:1;height:5px;background:var(--border);border-radius:3px;overflow:hidden;}
 .bar-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--accent));border-radius:3px;}
 .bar-pct{font-size:0.78rem;color:var(--muted);min-width:36px;text-align:right;}
-
 /* PLAYER GRID */
 .player-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-bottom:2rem;}
 .player-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;transition:all 0.22s;cursor:pointer;position:relative;overflow:hidden;text-align:center;}
 .player-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent3));opacity:0;transition:opacity 0.2s;}
 .player-card:hover{border-color:rgba(0,229,255,0.35);transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,229,255,0.08);}
 .player-card:hover::before{opacity:1;}
-
 /* AVATAR */
 .avatar-wrap{position:relative;width:72px;height:72px;margin:0 auto 0.85rem;}
 .avatar-img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid rgba(0,229,255,0.25);display:block;}
@@ -102,7 +92,6 @@ tbody tr:hover{background:rgba(0,229,255,0.03);}
 .player-stats-mini{font-size:0.76rem;color:var(--muted);padding-top:0.5rem;border-top:1px solid var(--border);}
 .view-profile{font-size:0.72rem;color:var(--accent);margin-top:0.5rem;opacity:0;transition:opacity 0.2s;font-weight:600;letter-spacing:0.05em;}
 .player-card:hover .view-profile{opacity:1;}
-
 /* MATCH CARDS */
 .match-list{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;}
 .match-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.1rem 1.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;transition:border-color 0.2s;}
@@ -114,7 +103,6 @@ tbody tr:hover{background:rgba(0,229,255,0.03);}
 .match-score .sep{-webkit-text-fill-color:var(--muted);font-size:1rem;margin:0 0.25rem;}
 .match-winner{font-size:0.68rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:0.06em;}
 .match-loser{font-size:0.68rem;color:var(--muted);}
-
 /* PAIRS */
 .gen-box{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;}
 .gen-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.06em;color:var(--accent);margin-bottom:1rem;}
@@ -133,7 +121,6 @@ tbody tr:hover{background:rgba(0,229,255,0.03);}
 .pair-label{font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;}
 .pair-names{font-weight:600;font-size:0.9rem;line-height:1.7;}
 .pair-level{font-size:0.75rem;color:var(--accent2);margin-top:0.35rem;}
-
 /* ADMIN */
 .admin-login{max-width:420px;margin:3rem auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;}
 .admin-login h2{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:0.05em;margin-bottom:0.4rem;}
@@ -154,7 +141,6 @@ select option{background:var(--bg2);}
 .alert{padding:0.75rem 1rem;border-radius:10px;font-size:0.85rem;margin-bottom:1rem;display:none;}
 .alert.success{background:rgba(0,255,157,0.1);border:1px solid rgba(0,255,157,0.3);color:var(--green);display:block;}
 .alert.error{background:rgba(255,68,102,0.1);border:1px solid rgba(255,68,102,0.3);color:var(--red);display:block;}
-
 /* HERO */
 .hero{text-align:center;padding:3rem 1rem 2rem;}
 .hero-title{font-family:'Bebas Neue',sans-serif;font-size:5rem;letter-spacing:0.06em;line-height:0.95;margin-bottom:1rem;}
@@ -162,7 +148,6 @@ select option{background:var(--bg2);}
 .hero-title .line2{background:linear-gradient(135deg,var(--accent2) 0%,var(--yellow) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;font-size:3rem;}
 .hero-sub{color:var(--muted);font-size:1rem;margin-bottom:2rem;letter-spacing:0.05em;}
 .hero-divider{width:60px;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent3));margin:0 auto 2rem;border-radius:2px;}
-
 /* ── PLAYER PROFILE MODAL ── */
 .modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:1rem;}
 .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
@@ -171,7 +156,6 @@ select option{background:var(--bg2);}
 @keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .modal-close{position:absolute;top:1rem;right:1rem;background:var(--bg3);border:1px solid var(--border);color:var(--muted);width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all 0.15s;z-index:10;}
 .modal-close:hover{color:var(--text);border-color:var(--accent);}
-
 /* Modal header */
 .modal-head{padding:2rem 2rem 1.5rem;display:flex;gap:1.5rem;align-items:center;border-bottom:1px solid var(--border);background:linear-gradient(135deg,rgba(0,229,255,0.04),rgba(168,85,247,0.04));}
 .modal-avatar-wrap{position:relative;flex-shrink:0;}
@@ -183,7 +167,6 @@ select option{background:var(--bg2);}
 .modal-player-name{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:0.04em;line-height:1;margin-bottom:0.2rem;}
 .modal-level-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;}
 .level-badge{background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.25);color:var(--accent);font-size:0.78rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:6px;letter-spacing:0.04em;}
-
 /* Modal stat pills */
 .modal-stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.25rem;}
 .stat-pill{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:0.5rem 0.9rem;text-align:center;}
@@ -193,22 +176,18 @@ select option{background:var(--bg2);}
 .stat-pill.red .sp-val{color:var(--red);}
 .stat-pill.yellow .sp-val{color:var(--yellow);}
 .stat-pill.cyan .sp-val{color:var(--accent);}
-
 /* Modal body */
 .modal-body{padding:1.5rem 2rem 2rem;}
 .modal-section-title{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.08em;color:var(--accent);margin-bottom:0.75rem;margin-top:1.25rem;padding-bottom:0.35rem;border-bottom:1px solid var(--border);}
 .modal-section-title:first-child{margin-top:0;}
-
 /* Form field inside modal */
 .upload-hint{font-size:0.72rem;color:var(--muted);margin-top:0.35rem;}
-
 /* Win rate bar in modal */
 .modal-win-bar{margin-bottom:1.25rem;}
 .modal-win-label{display:flex;justify-content:space-between;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem;}
 .modal-win-label span:last-child{color:var(--green);font-weight:600;}
 .big-bar-bg{height:8px;background:var(--border);border-radius:4px;overflow:hidden;}
 .big-bar-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--accent));border-radius:4px;transition:width 0.8s ease;}
-
 /* Match history in modal */
 .modal-match-item{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:0.75rem 1rem;margin-bottom:0.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0.75rem;}
 .mmi-team{font-size:0.82rem;}
@@ -219,10 +198,8 @@ select option{background:var(--bg2);}
 .mmi-result.loss{color:var(--red);}
 .mmi-date{font-size:0.68rem;color:var(--muted);text-align:center;margin-top:0.1rem;}
 .no-matches-msg{text-align:center;padding:2rem;color:var(--muted);font-size:0.88rem;}
-
 /* Photo upload hidden input */
 #photo-upload-input{display:none;}
-
 @media(max-width:768px){
   .stats-row{grid-template-columns:repeat(2,1fr);}
   .form-row{grid-template-columns:1fr;}
@@ -238,9 +215,7 @@ select option{background:var(--bg2);}
 </style>
 </head>
 <body>
-
 <canvas id="bgCanvas"></canvas>
-
 <!-- PLAYER PROFILE MODAL -->
 <div class="modal-overlay" id="profileModal" onclick="if(event.target===this)closeProfile()">
   <div class="modal" id="modalContent">
@@ -249,23 +224,19 @@ select option{background:var(--bg2);}
     <div class="modal-body" id="modalBody"></div>
   </div>
 </div>
-
 <input type="file" id="photo-upload-input" accept="image/*" onchange="handlePhotoUpload(event)">
-
 <header>
   <div class="logo">Stoke<span>Badminton</span></div>
   <nav>
-    <button class="active" onclick="showSection('standings')">🏆 Standings</button>
+    <button class="active" onclick="showSection('standings')">🏆 Point Table</button>
     <button onclick="showSection('players')">👤 Players</button>
-    <button onclick="showSection('matches')">🏸 Matches</button>
+    <button onclick="showSection('matches')">📅 Schedule</button>
     <button onclick="showSection('pairs')">🎲 Pairs</button>
     <button onclick="showSection('admin')">⚙️ Admin</button>
   </nav>
 </header>
-
 <main>
-
-  <!-- STANDINGS -->
+  <!-- POINT TABLE (was Standings) -->
   <div id="standings" class="section active">
     <div class="hero">
       <div class="hero-title">
@@ -292,21 +263,18 @@ select option{background:var(--bg2);}
       </table>
     </div>
   </div>
-
   <!-- PLAYERS -->
   <div id="players" class="section">
     <h1 class="page-title">All <span class="hl">Players</span></h1>
-    <p class="page-sub">18 registered players · Click any card to view full profile</p>
+    <p class="page-sub">Click any card to view full profile</p>
     <div class="player-grid" id="player-grid"></div>
   </div>
-
-  <!-- MATCHES -->
+  <!-- SCHEDULE (was Matches) -->
   <div id="matches" class="section">
-    <h1 class="page-title">Match <span class="hl">History</span></h1>
-    <p class="page-sub">All Wednesday doubles results</p>
+    <h1 class="page-title">Schedule &amp; <span class="hl">Results</span></h1>
+    <p class="page-sub">All Wednesday doubles results • Only Admin can create/add new fixtures</p>
     <div id="match-list-container"><div style="text-align:center;padding:4rem;color:var(--muted)">No matches yet. Add results in the Admin panel.</div></div>
   </div>
-
   <!-- PAIRS -->
   <div id="pairs" class="section">
     <h1 class="page-title">Pair <span class="hl">Generator</span></h1>
@@ -322,11 +290,10 @@ select option{background:var(--bg2);}
     </div>
     <div id="pairs-output"></div>
   </div>
-
   <!-- ADMIN -->
   <div id="admin" class="section">
     <h1 class="page-title">Admin <span class="hl">Panel</span></h1>
-    <p class="page-sub">Manage players and record match results</p>
+    <p class="page-sub">Manage players and record match results (fixtures only here)</p>
     <div class="admin-login" id="admin-login-box">
       <h2>🔒 Admin Login</h2>
       <p>Enter the admin password to manage the league</p>
@@ -343,8 +310,8 @@ select option{background:var(--bg2);}
         <button class="btn secondary" onclick="adminLogout()" style="padding:0.4rem 0.8rem;font-size:0.8rem">Logout</button>
       </div>
       <div class="admin-tabs">
-        <button class="admin-tab active" onclick="showAdminTab('add-match')">Add Match Result</button>
-        <button class="admin-tab" onclick="showAdminTab('edit-players')">Edit Players</button>
+        <button class="admin-tab active" onclick="showAdminTab('add-match')">Add Match Result (Fixture)</button>
+        <button class="admin-tab" onclick="showAdminTab('edit-players')">Edit / Add / Remove Players</button>
         <button class="admin-tab" onclick="showAdminTab('manage-matches')">Manage Matches</button>
       </div>
       <div class="admin-form active" id="form-add-match">
@@ -375,7 +342,26 @@ select option{background:var(--bg2);}
       </div>
       <div class="admin-form" id="form-edit-players">
         <div class="table-wrap">
-          <div class="table-header"><h2>Edit Players</h2></div>
+          <div class="table-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <h2>Edit / Add / Remove Players</h2>
+            <div style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+              <input type="text" id="new-player-name" placeholder="New player name" style="max-width:220px;">
+              <select id="new-player-level">
+                <option value="">Level</option>
+                <option value="1">1.0 ★</option>
+                <option value="1.5">1.5 ★</option>
+                <option value="2">2.0 ★★</option>
+                <option value="2.5">2.5 ★★</option>
+                <option value="3">3.0 ★★★</option>
+                <option value="3.5">3.5 ★★★</option>
+                <option value="3.8">3.8 ★★★</option>
+                <option value="4">4.0 ★★★★</option>
+                <option value="4.5">4.5 ★★★★</option>
+                <option value="5">5.0 ★★★★★</option>
+              </select>
+              <button class="btn" onclick="addNewPlayer()" style="padding:0.5rem 1rem;">+ Add Player</button>
+            </div>
+          </div>
           <table>
             <thead><tr><th>#</th><th>Name</th><th>Level</th><th>Action</th></tr></thead>
             <tbody id="edit-players-body"></tbody>
@@ -396,13 +382,10 @@ select option{background:var(--bg2);}
       </div>
     </div>
   </div>
-
 </main>
-
 <script>
 // ── CONFIG ──
 const ADMIN_PASSWORD = 'Stoke2025!';
-
 // Unique gradient pairs per player for their SVG avatar
 const AVATAR_GRADIENTS = [
   ['#00e5ff','#a855f7'],['#ff6b35','#ffd700'],['#00ff9d','#00e5ff'],
@@ -412,42 +395,37 @@ const AVATAR_GRADIENTS = [
   ['#ff6b35','#00ff9d'],['#00ff9d','#ffd700'],['#a855f7','#00e5ff'],
   ['#ff4466','#ffd700'],['#ffd700','#a855f7'],['#00e5ff','#ff6b35'],
 ];
-
 // ── DATA ──
 let players = JSON.parse(localStorage.getItem('sbl_players') || 'null') || [
-  {id:1,  name:'Imdad',          level:3.0},
-  {id:2,  name:'Dr. Shanel',     level:4.0},
-  {id:3,  name:'Irshad',         level:3.5},
-  {id:4,  name:'Ahammed Ali',    level:2.0},
-  {id:5,  name:'Thowfeeq',       level:3.0},
-  {id:6,  name:'Irshad B',       level:3.5},
-  {id:7,  name:'Syed Mohammed',  level:4.0},
-  {id:8,  name:'Nuhas',          level:3.0},
-  {id:9,  name:'Binshid',        level:4.0},
-  {id:10, name:'Nihas',          level:3.5},
-  {id:11, name:'Sali',           level:3.0},
-  {id:12, name:'Ameen',          level:4.5},
-  {id:13, name:'Aseeb',          level:3.0},
-  {id:14, name:'Basil',          level:4.0},
-  {id:15, name:'Faisal',         level:3.8},
-  {id:16, name:'Habeeb',         level:3.0},
-  {id:17, name:'Rameez',         level:3.0},
-  {id:18, name:'Shemin',         level:3.0},
+  {id:1, name:'Imdad', level:3.0},
+  {id:2, name:'Dr. Shanel', level:4.0},
+  {id:3, name:'Irshad', level:3.5},
+  {id:4, name:'Ahammed Ali', level:2.0},
+  {id:5, name:'Thowfeeq', level:3.0},
+  {id:6, name:'Irshad B', level:3.5},
+  {id:7, name:'Syed Mohammed', level:4.0},
+  {id:8, name:'Nuhas', level:3.0},
+  {id:9, name:'Binshid', level:4.0},
+  {id:10, name:'Nihas', level:3.5},
+  {id:11, name:'Sali', level:3.0},
+  {id:12, name:'Ameen', level:4.5},
+  {id:13, name:'Aseeb', level:3.0},
+  {id:14, name:'Basil', level:4.0},
+  {id:15, name:'Faisal', level:3.8},
+  {id:16, name:'Habeeb', level:3.0},
+  {id:17, name:'Rameez', level:3.0},
+  {id:18, name:'Shemin', level:3.0},
 ];
-
 let matches = JSON.parse(localStorage.getItem('sbl_matches') || '[]');
-let photos  = JSON.parse(localStorage.getItem('sbl_photos')  || '{}');
+let photos = JSON.parse(localStorage.getItem('sbl_photos') || '{}');
 let currentUploadId = null;
-
 function save(){
   localStorage.setItem('sbl_players', JSON.stringify(players));
   localStorage.setItem('sbl_matches', JSON.stringify(matches));
-  localStorage.setItem('sbl_photos',  JSON.stringify(photos));
+  localStorage.setItem('sbl_photos', JSON.stringify(photos));
 }
-
 function getPlayer(id){return players.find(p=>p.id===id);}
 function playerIndex(id){return players.findIndex(p=>p.id===id);}
-
 function starsHTML(level){
   let s='';
   for(let i=1;i<=5;i++){
@@ -458,7 +436,6 @@ function starsHTML(level){
   return '<span class="stars">'+s+'</span>';
 }
 function initials(name){return name.split(' ').map(w=>w[0]).join('').substring(0,2).toUpperCase();}
-
 // ── SVG AVATAR GENERATOR ──
 function svgAvatar(id, size=72, radius=50){
   const idx = (playerIndex(id)) % AVATAR_GRADIENTS.length;
@@ -478,7 +455,6 @@ function svgAvatar(id, size=72, radius=50){
       font-family="Bebas Neue, sans-serif" font-size="${fs}" fill="rgba(5,8,16,0.85)" font-weight="bold">${ini}</text>
   </svg>`;
 }
-
 function avatarHTML(id, size=72, rx=50){
   if(photos[id]){
     const borderR = rx >= 50 ? '50%' : (rx+'px');
@@ -486,7 +462,6 @@ function avatarHTML(id, size=72, rx=50){
   }
   return svgAvatar(id, size, rx);
 }
-
 // ── STATS ──
 function getStats(){
   const stats={};
@@ -498,12 +473,10 @@ function getStats(){
   });
   return stats;
 }
-
 function getPlayerMatches(playerId){
   return matches.filter(m=>m.teamA.includes(playerId)||m.teamB.includes(playerId))
     .sort((a,b)=>new Date(b.date)-new Date(a.date));
 }
-
 // ── NAV ──
 function showSection(id){
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
@@ -516,7 +489,6 @@ function showSection(id){
   if(id==='pairs')renderPairSelector();
   if(id==='admin'&&document.getElementById('admin-panel').classList.contains('visible'))populateAdminDropdowns();
 }
-
 // ── STANDINGS ──
 function renderStandings(){
   const stats=getStats();
@@ -546,7 +518,6 @@ function renderStandings(){
     </tr>`;
   }).join('');
 }
-
 // ── PLAYERS ──
 function renderPlayers(){
   const stats=getStats();
@@ -564,11 +535,10 @@ function renderPlayers(){
     </div>`;
   }).join('');
 }
-
-// ── MATCHES ──
+// ── SCHEDULE / MATCHES ──
 function renderMatches(){
   const c=document.getElementById('match-list-container');
-  if(!matches.length){c.innerHTML='<div style="text-align:center;padding:4rem;color:var(--muted)">No matches yet.</div>';return;}
+  if(!matches.length){c.innerHTML='<div style="text-align:center;padding:4rem;color:var(--muted)">No matches yet. Add results in the Admin panel.</div>';return;}
   const sorted=[...matches].sort((a,b)=>new Date(b.date)-new Date(a.date));
   c.innerHTML='<div class="match-list">'+sorted.map(m=>{
     const ta=m.teamA.map(id=>getPlayer(id)?.name||'?');
@@ -581,7 +551,6 @@ function renderMatches(){
     </div>`;
   }).join('')+'</div>';
 }
-
 // ── PAIRS ──
 let selectedForPairs=new Set();
 function renderPairSelector(){
@@ -619,7 +588,6 @@ function generatePairs(){
     }).join('')
   }</div><button class="btn secondary" onclick="generatePairs()" style="margin-top:1rem">🔄 Reshuffle</button></div>`;
 }
-
 // ── PLAYER PROFILE MODAL ──
 function openProfile(id){
   const p = getPlayer(id);
@@ -631,8 +599,10 @@ function openProfile(id){
   const ranked = players.map(pl=>({...pl,...stats[pl.id]})).sort((a,b)=>b.points-a.points||b.won-a.won);
   const rank = ranked.findIndex(pl=>pl.id===id)+1;
   const streak = getStreak(id);
-
-  // HEAD
+  // HEAD with ONE-TIME PHOTO UPLOAD
+  const photoBtnHTML = photos[id] 
+    ? `<span style="position:absolute;bottom:-6px;right:-6px;background:var(--green);color:#050810;border:none;border-radius:6px;padding:0.3rem 0.6rem;font-size:0.65rem;font-weight:700;letter-spacing:0.03em;cursor:default;">✅ PHOTO SET (locked)</span>`
+    : `<button class="modal-avatar-upload" onclick="triggerPhotoUpload(${id})">📷 Upload Photo (once only)</button>`;
   document.getElementById('modalHead').innerHTML = `
     <div class="modal-avatar-wrap">
       <div class="modal-avatar" id="modal-avatar-display">
@@ -640,7 +610,7 @@ function openProfile(id){
           ? `<img src="${photos[id]}" style="width:100%;height:100%;object-fit:cover;border-radius:18px;" alt="">`
           : svgAvatar(id, 90, 18)}
       </div>
-      <button class="modal-avatar-upload" onclick="triggerPhotoUpload(${id})">📷 Photo</button>
+      ${photoBtnHTML}
     </div>
     <div class="modal-head-info">
       <div class="modal-player-name">${p.name}</div>
@@ -657,7 +627,6 @@ function openProfile(id){
         <div class="stat-pill ${streak.type==='W'?'green':'red'}"><span class="sp-val">${streak.count>0?streak.type+streak.count:'—'}</span><span class="sp-lbl">Streak</span></div>
       </div>
     </div>`;
-
   // BODY
   let matchRows = '';
   if(!playerMatches.length){
@@ -688,7 +657,6 @@ function openProfile(id){
       </div>`;
     }).join('');
   }
-
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-section-title">Win Rate</div>
     <div class="modal-win-bar">
@@ -698,20 +666,16 @@ function openProfile(id){
     <div class="modal-section-title">Match History (${playerMatches.length})</div>
     ${matchRows}
     <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);">
-      <p style="font-size:0.75rem;color:var(--muted)">📷 To add a photo, click the "Photo" button on the avatar above. Photos are saved locally in your browser.</p>
+      <p class="upload-hint">📷 Player photos can be uploaded <strong>only once</strong>. After upload the button locks permanently. All data saved in your browser.</p>
     </div>`;
-
   document.getElementById('profileModal').classList.add('open');
   document.body.style.overflow='hidden';
 }
-
 function closeProfile(){
   document.getElementById('profileModal').classList.remove('open');
   document.body.style.overflow='';
 }
-
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeProfile(); });
-
 function getStreak(id){
   const pm = getPlayerMatches(id).sort((a,b)=>new Date(b.date)-new Date(a.date));
   if(!pm.length) return {type:'W',count:0};
@@ -726,9 +690,12 @@ function getStreak(id){
   }
   return {type,count};
 }
-
-// ── PHOTO UPLOAD ──
+// ── PHOTO UPLOAD (LOCKED AFTER FIRST UPLOAD) ──
 function triggerPhotoUpload(id){
+  if(photos[id]){
+    alert('Photo has already been uploaded for this player and is now permanently locked.');
+    return;
+  }
   currentUploadId=id;
   document.getElementById('photo-upload-input').click();
 }
@@ -742,11 +709,12 @@ function handlePhotoUpload(e){
     // Update modal avatar
     const disp=document.getElementById('modal-avatar-display');
     if(disp) disp.innerHTML=`<img src="${ev.target.result}" style="width:100%;height:100%;object-fit:cover;border-radius:18px;" alt="">`;
+    // Refresh the whole modal so the button becomes locked
+    openProfile(currentUploadId);
   };
   reader.readAsDataURL(file);
   e.target.value='';
 }
-
 // ── ADMIN ──
 function adminLogin(){
   const pw=document.getElementById('admin-password').value;
@@ -796,14 +764,63 @@ function addMatch(){
   document.getElementById('score-a').value='';document.getElementById('score-b').value='';document.getElementById('match-round').value='';
   renderManageMatches();
 }
-function renderEditPlayers(){
-  document.getElementById('edit-players-body').innerHTML=players.map(p=>`
+// ── ADD / DELETE PLAYERS (NEW) ──
+function addNewPlayer() {
+  const nameInput = document.getElementById('new-player-name');
+  const levelSelect = document.getElementById('new-player-level');
+  const name = nameInput.value.trim();
+  const level = parseFloat(levelSelect.value);
+  if (!name) { alert('Please enter a player name.'); return; }
+  if (isNaN(level) || level < 1 || level > 5) { alert('Please select a valid level (1.0 to 5.0).'); return; }
+  const maxId = players.length > 0 ? Math.max(...players.map(p => p.id)) : 0;
+  const newId = maxId + 1;
+  players.push({ id: newId, name, level });
+  save();
+  nameInput.value = '';
+  levelSelect.value = '';
+  renderEditPlayers();
+  populateAdminDropdowns();
+  alert(`Player "${name}" (Level ${level}) added with ID #${newId}`);
+}
+function deletePlayer(id) {
+  const player = getPlayer(id);
+  if (!player) return;
+  if (!confirm(`Delete player "${player.name}" (ID ${id})?\n\nThis cannot be undone.`)) return;
+  const playerMatches = getPlayerMatches(id);
+  if (playerMatches.length > 0) {
+    if (!confirm(`This player has played ${playerMatches.length} match(es).\nDelete anyway? Past matches will show "?" for this player.`)) return;
+  }
+  players = players.filter(p => p.id !== id);
+  save();
+  renderEditPlayers();
+  populateAdminDropdowns();
+  alert(`Player "${player.name}" deleted.`);
+}
+function renderEditPlayers() {
+  const tbody = document.getElementById('edit-players-body');
+  if (players.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;padding:2rem;color:var(--muted);">No players yet. Add one above.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = players
+    .sort((a,b) => a.name.localeCompare(b.name))
+    .map(p => `
     <tr>
       <td style="color:var(--muted)">${p.id}</td>
-      <td><input type="text" value="${p.name}" id="pname-${p.id}" style="max-width:180px"></td>
-      <td><select id="plevel-${p.id}" style="width:120px">${[1,1.5,2,2.5,3,3.5,3.8,4,4.5,5].map(l=>`<option value="${l}" ${p.level==l?'selected':''}>${l} ${'★'.repeat(Math.floor(l))}</option>`).join('')}</select></td>
-      <td><button class="btn" onclick="savePlayer(${p.id})" style="padding:0.4rem 0.75rem;font-size:0.8rem">Save</button></td>
-    </tr>`).join('');
+      <td><input type="text" value="${p.name.replace(/"/g,'&quot;')}" id="pname-${p.id}" style="max-width:220px;"></td>
+      <td>
+        <select id="plevel-${p.id}" style="width:140px">
+          ${[1,1.5,2,2.5,3,3.5,3.8,4,4.5,5].map(l => `
+            <option value="${l}" ${p.level === l ? 'selected' : ''}>${l} ${'★'.repeat(Math.floor(l))}</option>
+          `).join('')}
+        </select>
+      </td>
+      <td style="white-space:nowrap;">
+        <button class="btn" onclick="savePlayer(${p.id})" style="padding:0.4rem 0.9rem; margin-right:0.5rem; font-size:0.8rem;">Save</button>
+        <button onclick="deletePlayer(${p.id})" style="background:none; border:none; color:var(--red); font-size:1.1rem; cursor:pointer; padding:0.4rem;" title="Delete player">🗑</button>
+      </td>
+    </tr>
+  `).join('');
 }
 function savePlayer(id){
   const p=players.find(x=>x.id===id);
@@ -829,7 +846,6 @@ function renderManageMatches(){
 }
 function deleteMatch(id){if(!confirm('Delete this match?'))return;matches=matches.filter(m=>m.id!==id);save();renderManageMatches();}
 function clearMatches(){matches=[];save();renderManageMatches();}
-
 // ── ANIMATED CANVAS ──
 (function(){
   const canvas=document.getElementById('bgCanvas');
@@ -875,7 +891,6 @@ function clearMatches(){matches=[];save();renderManageMatches();}
   }
   animate();
 })();
-
 renderStandings();
 </script>
 </body>
